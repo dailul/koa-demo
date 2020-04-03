@@ -10,7 +10,8 @@ const controller = require('./controller');
 const middleware = require('./middleware')
 // error handler
 onerror(app)
-// middleware(app)
+// 加载中间件
+middleware(app)
 // middlewares
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
